@@ -1,0 +1,83 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/communication-course/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/communication-course",
+        "index": "apps/communication-course/src/index.html",
+        "baseHref": "/",
+        "main": "apps/communication-course/src/main.tsx",
+        "polyfills": "apps/communication-course/src/polyfills.ts",
+        "tsConfig": "apps/communication-course/tsconfig.app.json",
+        "assets": [
+          "apps/communication-course/src/favicon.ico",
+          "apps/communication-course/src/assets"
+        ],
+        "styles": ["apps/communication-course/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/communication-course/src/environments/environment.ts",
+              "with": "apps/communication-course/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "communication-course:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "communication-course:build:development"
+        },
+        "production": {
+          "buildTarget": "communication-course:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/communication-course/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/communication-course"],
+      "options": {
+        "jestConfig": "apps/communication-course/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
