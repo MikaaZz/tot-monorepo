@@ -1,0 +1,24 @@
+.map-navigation {
+  background-image: url(../../assets/Bg-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 720px;
+}
+
+.map-navigation__container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 1440px;
+}
+
+.map-navigation__divPlanet h2 {
+  color: var(--color-whiteText);
+}
+
+.map-navigation__divPlanet img {
+  width: 280px;
+}

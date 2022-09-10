@@ -1,0 +1,17 @@
+.map-navigation {
+  background-image: url(../../assets/Bg-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-navigation__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+}
+
+.map-navigation__divPlanet img {
+  width: 300px;
+}/*# sourceMappingURL=map.module.css.map */

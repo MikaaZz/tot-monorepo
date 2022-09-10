@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "communication-course": "apps/communication-course",
-    "communication-course-e2e": "apps/communication-course-e2e"
+    "communication-course-e2e": "apps/communication-course-e2e",
+    "ui": "libs/ui"
   }
 }
