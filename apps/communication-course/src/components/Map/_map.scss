@@ -1,0 +1,314 @@
+.map-navigation {
+  background-image: url(../../assets/Bg-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 32px;
+
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1440px;
+  }
+  &__divPlanet {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    h2 {
+      color: var(--color-whiteText);
+      text-align: center;
+      opacity: 0;
+      transition: all 0.25s ease-in-out;
+    }
+
+    img {
+      max-width: 320px;
+      transition: all 0.25s ease-in-out;
+    }
+
+    &:hover {
+      h2 {
+        opacity: 1;
+      }
+      img {
+        animation-name: planetRotate;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+
+        @keyframes planetRotate {
+          0% {
+            transform: scale(1) rotate(0turn);
+          }
+          50% {
+            transform: scale(1.1) rotate(0.5turn);
+          }
+
+          100% {
+            transform: scale(1) rotate(1turn);
+          }
+        }
+      }
+    }
+
+    &--earth {
+      .map-navigation__divPlanet--titleOne {
+        order: 1;
+      }
+      img {
+        order: 3;
+      }
+      .map-navigation__divPlanet--titleTwo {
+        order: 2;
+      }
+    }
+    &--moon {
+      .map-navigation__divPlanet--titleOne {
+        order: 1;
+      }
+      img {
+        order: 3;
+      }
+      .map-navigation__divPlanet--titleTwo {
+        order: 2;
+      }
+    }
+    &--jupter {
+      .map-navigation__divPlanet--titleOne {
+        order: 1;
+      }
+      img {
+        order: 2;
+      }
+    }
+    &--mars {
+      .map-navigation__divPlanet--titleOne {
+        order: 1;
+      }
+      img {
+        order: 3;
+      }
+      .map-navigation__divPlanet--titleTwo {
+        order: 2;
+      }
+    }
+    &--uranus {
+      .map-navigation__divPlanet--titleOne {
+        order: 1;
+      }
+      img {
+        left: 30px;
+        position: relative;
+        order: 3;
+      }
+      .map-navigation__divPlanet--titleTwo {
+        order: 2;
+      }
+    }
+    &--star {
+      .map-navigation__divPlanet--titleOne {
+      }
+      img {
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .map-navigation {
+    height: 100vh;
+    overflow: hidden;
+
+    &__container {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100vh;
+      position: relative;
+      top: 90px;
+    }
+    &__divPlanet {
+      flex-direction: row;
+
+      gap: 16px;
+
+      h2 {
+        text-align: left;
+        width: 200px;
+      }
+      img {
+        width: 280px;
+      }
+
+      &--earth {
+        left: 300px;
+        position: relative;
+        top: 510px;
+
+        h2 {
+          position: relative;
+        }
+        .map-navigation__divPlanet--titleOne {
+          order: 1;
+          text-align: right;
+        }
+        .map-navigation__divPlanet--titleTwo {
+          order: 3;
+        }
+
+        img {
+          order: 2;
+          width: 300px;
+        }
+      }
+      &--moon {
+        right: 900px;
+        position: relative;
+        top: 420px;
+
+        h2 {
+          position: relative;
+        }
+
+        .map-navigation__divPlanet--titleOne {
+          order: 1;
+          bottom: 130px;
+          text-align: right;
+          left: 150px;
+        }
+        .map-navigation__divPlanet--titleTwo {
+          bottom: 90px;
+          right: 50px;
+          width: 220px;
+          order: 3;
+        }
+
+        img {
+          order: 2;
+          width: 250px;
+        }
+      }
+      &--jupter {
+        flex-direction: column;
+
+        right: 1100px;
+        position: relative;
+        bottom: 180px;
+
+        h2 {
+          position: relative;
+
+          text-align: center;
+          width: 100%;
+        }
+
+        .map-navigation__divPlanet--titleOne {
+          bottom: 60px;
+          left: 15px;
+          order: 2;
+        }
+
+        img {
+          order: 1;
+          width: 400px;
+        }
+      }
+      &--mars {
+        flex-direction: column;
+        right: 1100px;
+        position: relative;
+        bottom: 50px;
+
+        h2 {
+          top: 400px;
+          right: 60px;
+          position: relative;
+          width: 100%;
+        }
+
+        .map-navigation__divPlanet--titleOne {
+          order: 1;
+          right: 110px;
+        }
+
+        .map-navigation__divPlanet--titleTwo {
+          order: 2;
+        }
+
+        img {
+          width: 400px;
+        }
+      }
+      &--uranus {
+        flex-direction: column;
+        right: 2300px;
+        position: relative;
+        bottom: 100px;
+
+        h2 {
+          bottom: 20px;
+          left: 115px;
+          position: relative;
+          width: 100%;
+        }
+
+        .map-navigation__divPlanet--titleOne {
+          order: 2;
+        }
+
+        .map-navigation__divPlanet--titleTwo {
+          order: 3;
+        }
+
+        img {
+          order: 1;
+          width: 400px;
+        }
+      }
+      &--star {
+        .map-navigation__divPlanet--titleOne {
+        }
+        img {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .map-navigation {
+    &__container {
+      left: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .map-navigation {
+    &__container {
+      left: 15%;
+    }
+  }
+}
+
+.disable {
+  cursor: default;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.5;
+    h2 {
+      opacity: 0;
+    }
+  }
+}

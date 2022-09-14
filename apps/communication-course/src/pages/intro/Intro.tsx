@@ -1,9 +1,16 @@
-import styles from './intro.module.scss'
+import './_intro.scss'
 import Map from '../../components/Map/Map'
+import Main_Video from '../../components/Video/Video'
 
 export function Intro() {
   return (
     <>
+      <Main_Video
+        controls={true}
+        link='https://player.vimeo.com/video/749682927?h=1a2314e24c'
+        heigth={'100vh'}
+        width={'100vw'}
+      />
       <Map />
     </>
   )

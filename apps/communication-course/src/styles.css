@@ -1,5 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(./pages/intro/intro.module.scss);
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap");
+:root {
+  --color-whiteText: #f6f6f6;
+  --color-whiteOne: #f6f6f6;
+  --color-whiteTwo: #fefefe;
+  --color-whiteThree: #fdfeff;
+  --color-whiteFour: #fefdfb;
+  --color-blackOne: #303030;
+  --color-blackTwo: #2b2b2b;
+  --color-blackThree: #1f1f1f;
+  --color-blackFour: #1b1c1e;
+  --background-colorMain: #101b1f;
+  --radial-gradient: radial-gradient(
+    50% 50% at 50% 50%,
+    #1f3e4a 0%,
+    #0a1418 100%,
+    #0a1418 100%
+  );
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +28,12 @@
 
 body {
   overflow-x: hidden;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
