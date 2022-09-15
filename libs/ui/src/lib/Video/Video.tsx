@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
-import { Style } from 'util'
+import './_video.scss'
 
 interface videoLink {
   // isPlay: boolean
@@ -13,7 +13,7 @@ interface videoLink {
 
 function Main_Video(props: videoLink) {
   return (
-    <div>
+    <div className='video_player--main'>
       <ReactPlayer
         onEnded={() => {
           setTimeout(() => {

@@ -1,0 +1,41 @@
+<svg
+            width='446'
+            height='223'
+            viewBox='0 0 446 223'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <mask
+              id='mask0_92_19'
+              style='mask-type:alpha'
+              maskUnits='userSpaceOnUse'
+              x='0'
+              y='0'
+              width='446'
+              height='223'>
+              <rect width='446' height='223' fill='#D9D9D9' />
+            </mask>
+            <g mask='url(#mask0_92_19)'>
+              <g style='mix-blend-mode:lighten' opacity='0.5'>
+                <circle
+                  cx='223.16'
+                  cy='0.160246'
+                  r='221.155'
+                  transform='rotate(179.48 223.16 0.160246)'
+                  stroke='#727C85'
+                  stroke-width='2'
+                  stroke-dasharray='8 8'
+                />
+              </g>
+              <g style='mix-blend-mode:lighten' opacity='0.7'>
+                <circle
+                  cx='224.074'
+                  cy='0.446531'
+                  r='120.351'
+                  transform='rotate(179.48 224.074 0.446531)'
+                  stroke='#727C85'
+                  stroke-width='2'
+                  stroke-dasharray='8 8'
+                />
+              </g>
+            </g>
+          </svg>

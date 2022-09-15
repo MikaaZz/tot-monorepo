@@ -1,0 +1,47 @@
+@use '../../styles.scss';
+
+.main-textImage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0 0 16px 0;
+  max-width: 1024px;
+  &--container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  &--title {
+    color: var(--color-whiteText);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  &--text {
+    color: var(--color-whiteText);
+    text-align: center;
+    width: 100%;
+  }
+  &--image {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-textImage {
+    flex-direction: row;
+    &--title {
+      text-align: left;
+    }
+    &--text {
+      text-align: left;
+    }
+  }
+}

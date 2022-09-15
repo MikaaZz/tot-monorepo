@@ -1,0 +1,13 @@
+.video_player--main {
+  iframe {
+    html {
+      body {
+        .vp-controls {
+          .player .rounded-box {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}

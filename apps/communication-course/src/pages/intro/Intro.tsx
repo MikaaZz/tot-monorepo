@@ -1,6 +1,6 @@
 import './_intro.scss'
 import Map from '../../components/Map/Map'
-import Main_Video from '../../components/Video/Video'
+import Main_Video from 'libs/ui/src/lib/Video/Video'
 
 export function Intro() {
   return (

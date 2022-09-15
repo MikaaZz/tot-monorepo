@@ -1,3 +1,5 @@
+@use '../../styles.scss';
+
 .map-navigation {
   background-image: url(../../assets/Bg-map.png);
   background-position: center;
@@ -27,6 +29,7 @@
 
     h2 {
       color: var(--color-whiteText);
+      font-family: 'Orbitron', sans-serif;
       text-align: center;
       opacity: 0;
       transition: all 0.25s ease-in-out;
@@ -139,7 +142,6 @@
     }
     &__divPlanet {
       flex-direction: row;
-
       gap: 16px;
 
       h2 {

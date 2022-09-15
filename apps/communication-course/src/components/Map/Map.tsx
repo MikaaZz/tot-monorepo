@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './_map.scss'
 
-export function Map() {
+const Map = () => {
   const [disable, setDisable] = useState('disable')
   return (
     <>

@@ -1,0 +1,36 @@
+.page01-content__pattern {
+  background-image: url(../../assets/page01/pattern.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 350px;
+}
+
+.pageOne__videoContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 16px;
+
+  margin: 32px auto;
+  max-width: 1024px;
+  width: 90%;
+
+  &--text {
+    color: var(--color-whiteText);
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  &--video {
+    width: 300px;
+
+    iframe {
+      border: none;
+      border-radius: 15px;
+    }
+  }
+}
