@@ -39,7 +39,7 @@ const Page01 = () => {
               </p>
             </>
           }
-          imageLink=''
+          imageLink='../../assets/page01/CardAastronauta.png'
           imageAlt=''
         />
         <div className='pageOne__videoContainer'>
@@ -63,8 +63,8 @@ const Page01 = () => {
             />
           </div>
         </div>
+        <Footer_return />
       </main>
-      <Footer_return />
     </>
   )
 }

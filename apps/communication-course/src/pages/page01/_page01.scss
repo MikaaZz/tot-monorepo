@@ -34,3 +34,12 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .pageOne__videoContainer {
+    &--video {
+      height: 350px;
+      width: 550px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .main-cardImage {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
 
   background: linear-gradient(
@@ -10,7 +10,7 @@
     rgba(51, 51, 51, 0.2) 100%
   );
   backdrop-filter: blur(30px);
-  border-radius: 30px 15px 100px;
+  border-radius: 30px 15px 15px 100px;
 
   margin: 32px auto;
 
@@ -27,6 +27,8 @@
     }
   }
   &--image {
+    border-radius: 0 15px 0 0;
+    filter: drop-shadow(-6px 0px 28px rgba(0, 0, 0, 0.4));
   }
 }
 
@@ -36,6 +38,9 @@
     &--textContainer {
       padding: 32px 0 32px 32px;
       width: 60%;
+    }
+    &--image {
+      border-radius: 0 15px 15px 180px;
     }
   }
 }
