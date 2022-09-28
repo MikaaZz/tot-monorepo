@@ -1,8 +1,7 @@
 import './_text_image.scss'
 
 interface textImage {
-  title: string
-  text: string
+  containerContet: JSX.Element
   imageLink: string
   imageAlt: string
 }
@@ -10,10 +9,7 @@ interface textImage {
 const Text_image = (props: textImage) => {
   return (
     <div className='main-textImage'>
-      <div className='main-textImage--container'>
-        <h2 className='main-textImage--title'>{props.title}</h2>
-        <p className='main-textImage--text'>{props.text}</p>
-      </div>
+      <div className='main-textImage--container'>{props.containerContet}</div>
       <img
         className='main-textImage--image'
         src={props.imageLink}

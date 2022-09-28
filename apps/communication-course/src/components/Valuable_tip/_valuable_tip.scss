@@ -20,7 +20,7 @@
 
     transition: 0.3s;
 
-    left: 450px;
+    left: 80px;
     top: 0;
     position: absolute;
     z-index: 1;
@@ -115,6 +115,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .valuable-tip {
+    svg {
+      left: 450px;
+    }
+  }
   .containerAnimation {
     height: 600px;
   }

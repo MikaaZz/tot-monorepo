@@ -13,6 +13,9 @@
   border-radius: 30px 15px 15px 100px;
 
   margin: 32px auto;
+  padding-left: 16px;
+
+  position: relative;
 
   max-width: 1024px;
   width: 90%;
@@ -20,10 +23,16 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     padding: 32px;
-    p {
+    * {
       color: var(--color-whiteText);
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-left: 16px;
+      }
     }
   }
   &--image {
@@ -34,12 +43,15 @@
 
 @media screen and (min-width: 1024px) {
   .main-cardImage {
+    height: 480px;
     flex-direction: row;
     &--textContainer {
       padding: 32px 0 32px 32px;
       width: 60%;
     }
     &--image {
+      bottom: 64px;
+      position: relative;
       border-radius: 0 15px 15px 180px;
     }
   }

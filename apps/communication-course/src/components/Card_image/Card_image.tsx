@@ -3,7 +3,7 @@ import './_card_image.scss'
 import Button from 'libs/ui/src/lib/Button/Button'
 
 interface cardImage {
-  paragraph: JSX.Element
+  cardContent: JSX.Element
   imageLink: string
   imageAlt: string
 }
@@ -11,17 +11,14 @@ interface cardImage {
 const Card_image = (props: cardImage) => {
   return (
     <>
-      <div className='main-cardImage'>
-        <div className='main-cardImage--textContainer'>
-          {props.paragraph}
-          <Button text='Seguir em frente' />
-        </div>
+      <section className='main-cardImage'>
+        <div className='main-cardImage--textContainer'>{props.cardContent}</div>
         <img
           className='main-cardImage--image'
           src={props.imageLink}
           alt={props.imageAlt}
         />
-      </div>
+      </section>
     </>
   )
 }
