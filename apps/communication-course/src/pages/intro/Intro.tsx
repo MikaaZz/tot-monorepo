@@ -8,8 +8,6 @@ export function Intro() {
       <Main_Video
         controls={true}
         link='https://player.vimeo.com/video/749682927?h=1a2314e24c'
-        heigth={'100vh'}
-        width={'100vw'}
       />
       <Map />
     </>

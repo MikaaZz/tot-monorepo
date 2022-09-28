@@ -1,7 +1,7 @@
 import Button from 'libs/ui/src/lib/Button/Button'
 import path from 'path'
 import { useState } from 'react'
-import Spaceship from './Spaceship'
+import Spaceship from '../Spaceship'
 import './_Footer_return.scss'
 
 const Footer_return = () => {

@@ -11,8 +11,6 @@ const Page01 = () => {
       <Main_Video
         controls={true}
         link='https://player.vimeo.com/video/750092871?h=02ba4bb5a7'
-        heigth={'100vh'}
-        width={'100vw'}
       />
       <main className='main-tag__background'>
         <span className='page01-content__pattern'></span>

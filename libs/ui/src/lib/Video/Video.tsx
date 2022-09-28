@@ -7,8 +7,6 @@ interface videoLink {
   // isMuted: boolean
   link: string
   controls: boolean
-  heigth: string
-  width: string
 }
 
 function Main_Video(props: videoLink) {
@@ -27,8 +25,8 @@ function Main_Video(props: videoLink) {
         style={{ backgroundColor: 'black' }}
         url={props.link}
         volume={0.5}
-        height={props.heigth}
-        width={props.width}
+        height={'100%'}
+        width={'100%'}
         config={{
           vimeo: {
             playerOptions: {

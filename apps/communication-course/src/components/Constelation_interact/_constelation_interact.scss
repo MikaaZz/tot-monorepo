@@ -1,0 +1,208 @@
+.constelation-interactContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 16px;
+
+  background-image: url(../../assets/patterns/pattern.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  list-style: none;
+
+  margin: 64px 0;
+
+  height: 500px;
+  width: 320px;
+
+  position: relative;
+  &--item {
+    color: var(--color-whiteText);
+    position: relative;
+    text-align: center;
+
+    svg {
+      cursor: pointer;
+      max-height: 80px;
+      transition: 0.3s;
+      width: 50px;
+      path {
+        transition: 0.3s;
+      }
+      &:hover {
+        path {
+          fill: var(--color-whiteFour);
+        }
+        transform: scale(1.1);
+      }
+    }
+
+    p {
+      background: linear-gradient(
+        260deg,
+        rgba(51, 51, 51, 0.5) 0%,
+        rgba(51, 51, 51, 0.2) 100%
+      );
+      backdrop-filter: blur(30px);
+      border-radius: 48px;
+      min-width: 320px;
+      padding: 32px;
+
+      transition: 0.3s;
+    }
+
+    &:nth-child(1) {
+      svg {
+        bottom: 94px;
+        position: absolute;
+        left: -24px;
+      }
+
+      p {
+        bottom: 100px;
+        position: absolute;
+        left: -160px;
+      }
+    }
+    &:nth-child(2) {
+      svg {
+        bottom: 36px;
+        position: absolute;
+        left: -22px;
+      }
+      p {
+        bottom: 20px;
+        position: absolute;
+        left: -160px;
+      }
+    }
+    &:nth-child(3) {
+      svg {
+        bottom: -40px;
+        position: absolute;
+        left: -24px;
+      }
+      p {
+        bottom: -40px;
+        left: -160px;
+        position: absolute;
+      }
+    }
+    &:nth-child(4) {
+      svg {
+        bottom: -105px;
+        left: -20px;
+        position: absolute;
+      }
+      p {
+        bottom: -110px;
+        left: -160px;
+        position: absolute;
+      }
+    }
+    &:nth-child(5) {
+      svg {
+        bottom: -170px;
+        left: -20px;
+        position: absolute;
+      }
+      p {
+        bottom: -230px;
+        left: -160px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .constelation-interactContainer {
+    max-width: 1024px;
+    width: 90%;
+    &--item {
+      width: 90%;
+
+      &:nth-child(1) {
+        svg {
+          bottom: 180px;
+          position: absolute;
+          left: 350px;
+        }
+
+        p {
+          bottom: 100px;
+          position: absolute;
+          left: 350px;
+        }
+      }
+      &:nth-child(2) {
+        svg {
+          bottom: 36px;
+          position: absolute;
+          left: 175px;
+        }
+        p {
+          bottom: 20px;
+          position: absolute;
+          left: 240px;
+        }
+      }
+      &:nth-child(3) {
+        svg {
+          bottom: -40px;
+          position: absolute;
+          left: 600px;
+        }
+        p {
+          bottom: -40px;
+          left: 220px;
+          position: absolute;
+        }
+      }
+      &:nth-child(4) {
+        svg {
+          bottom: -105px;
+          left: 350px;
+          position: absolute;
+        }
+        p {
+          bottom: -110px;
+          left: -70px;
+          position: absolute;
+        }
+      }
+      &:nth-child(5) {
+        svg {
+          bottom: -220px;
+          left: 220px;
+          position: absolute;
+        }
+        p {
+          bottom: -260px;
+          left: 200px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.starClickedDisplay {
+  display: none;
+}
+
+.starClickedOpacity {
+  opacity: 0;
+}
+
+@keyframes starAnimate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}

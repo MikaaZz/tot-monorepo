@@ -1,0 +1,49 @@
+.page02-content__pattern {
+  background-image: url(../../assets/patterns/patternHalf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  top: 0;
+
+  height: 150px;
+  width: 350px;
+}
+.page02 {
+  &__sectionOne {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 16px;
+    margin: 32px auto 64px;
+
+    max-width: 1440px;
+    width: 90%;
+
+    &--title {
+      color: var(--color-whiteText);
+      text-align: center;
+    }
+  }
+  &__sectionTwo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 16px;
+    margin: 32px auto;
+
+    position: relative;
+
+    max-width: 1440px;
+    width: 90%;
+    &--title {
+      color: var(--color-whiteText);
+      text-align: center;
+    }
+  }
+}

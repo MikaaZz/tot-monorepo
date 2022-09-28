@@ -1,8 +1,12 @@
 .page01-content__pattern {
-  background-image: url(../../assets/page01/pattern.svg);
+  background-image: url(../../assets/patterns/patternHalf.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  position: absolute;
+  top: 0;
+
   height: 150px;
   width: 350px;
 }
