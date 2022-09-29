@@ -8,6 +8,11 @@ import Text_image from '../../components/Text_image/Text_image'
 import Slider from '../../components/Slider/Slider'
 
 const Page03 = () => {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
+
   return (
     <>
       <Main_Video
@@ -84,7 +89,7 @@ const Page03 = () => {
             },
           ]}
         />
-        <Footer_return />
+        <Footer_return navPage='/intro03' />
       </main>
     </>
   )

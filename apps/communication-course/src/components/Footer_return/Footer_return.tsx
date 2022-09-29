@@ -1,22 +1,29 @@
 import Button from 'libs/ui/src/lib/Button/Button'
-import path from 'path'
+
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Spaceship from '../Spaceship'
 import './_Footer_return.scss'
 
-const Footer_return = () => {
-  const [spaceShipFly, setSpaceShipFly] = useState('')
+interface navigationFooter {
+  navPage: string
+}
 
+const Footer_return = (props: navigationFooter) => {
+  const [spaceShipFly, setSpaceShipFly] = useState('')
+  const navigate = useNavigate()
   return (
     <div className={`main-footer ${spaceShipFly}`}>
       <Spaceship />
-      <div
-        onClick={() => {
+      <Button
+        interaction={() => {
           setSpaceShipFly('animationSapceship')
-          setTimeout(() => {}, 6000)
-        }}>
-        <Button text={'Continuar explorando'} />
-      </div>
+          setTimeout(() => {
+            navigate(props.navPage)
+          }, 6000)
+        }}
+        text={'Continuar explorando'}
+      />
     </div>
   )
 }

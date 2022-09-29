@@ -1,30 +1,29 @@
-/* eslint-disable react/jsx-pascal-case */
 import Map from '../../components/Map/Map'
 import Main_Video from 'libs/ui/src/lib/Video/Video'
 
-export function Intro() {
+export function Intro04() {
   return (
     <>
-      <Main_Video
+      {/* <Main_Video
         controls={true}
         link='https://player.vimeo.com/video/749682927?h=1a2314e24c'
-      />
+      /> */}
       <Map
         planet01=''
-        planet02='disable'
-        planet03='disable'
-        planet04='disable'
-        planet05='disable'
+        planet02=''
+        planet03=''
+        planet04=''
+        planet05=''
         planet06='disable'
         planetLink01='/planet01'
-        planetLink02=''
-        planetLink03=''
-        planetLink04=''
-        planetLink05=''
+        planetLink02='/planet02'
+        planetLink03='/planet03'
+        planetLink04='/planet04'
+        planetLink05='/planet05'
         planetLink06=''
       />
     </>
   )
 }
 
-export default Intro
+export default Intro04

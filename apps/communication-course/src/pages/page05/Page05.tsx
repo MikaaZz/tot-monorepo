@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import './_page05.scss'
 
 // COMPONENTS
@@ -8,6 +9,11 @@ import Slider from '../../components/Slider/Slider'
 import Footer_return from '../../components/Footer_return/Footer_return'
 
 const Page05 = () => {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
+
   return (
     <>
       <Main_Video
@@ -129,7 +135,7 @@ const Page05 = () => {
             />
           </div>
         </div>
-        <Footer_return />
+        <Footer_return navPage='/intro05' />
       </main>
     </>
   )

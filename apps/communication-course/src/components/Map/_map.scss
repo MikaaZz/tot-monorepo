@@ -28,6 +28,7 @@
     h2 {
       color: var(--color-whiteText);
       font-family: 'Orbitron', sans-serif;
+      font-size: 1.25rem;
       text-align: center;
       opacity: 0;
       transition: all 0.25s ease-in-out;
@@ -143,6 +144,7 @@
       gap: 16px;
 
       h2 {
+        font-size: 1.5rem;
         text-align: left;
         width: 200px;
       }
@@ -182,8 +184,8 @@
 
         .map-navigation__divPlanet--titleOne {
           order: 1;
-          bottom: 130px;
-          text-align: right;
+          bottom: 140px;
+          text-align: left;
           left: 150px;
         }
         .map-navigation__divPlanet--titleTwo {
@@ -238,11 +240,13 @@
 
         .map-navigation__divPlanet--titleOne {
           order: 1;
-          right: 110px;
+          right: 330px;
+          text-align: right;
         }
 
         .map-navigation__divPlanet--titleTwo {
           order: 2;
+          left: 50px;
         }
 
         img {
@@ -264,10 +268,13 @@
 
         .map-navigation__divPlanet--titleOne {
           order: 2;
+          left: -50px;
+          text-align: right;
         }
 
         .map-navigation__divPlanet--titleTwo {
           order: 3;
+          right: -50px;
         }
 
         img {

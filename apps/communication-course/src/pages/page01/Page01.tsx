@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import './_page01.scss'
 
 import Main_Video from 'libs/ui/src/lib/Video/Video'
@@ -5,8 +6,13 @@ import Text_image from '../../components/Text_image/Text_image'
 import Card_image from '../../components/Card_image/Card_image'
 import Footer_return from '../../components/Footer_return/Footer_return'
 import Button from 'libs/ui/src/lib/Button/Button'
+import Button_donwload from 'libs/ui/src/lib/Button/Button_download'
 
 const Page01 = () => {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
   return (
     <>
       <Main_Video
@@ -44,7 +50,13 @@ const Page01 = () => {
                   Estude e navegue no curso, no seu tempo, sem pressa!
                 </strong>
               </p>
-              <Button text='Seguir em frente' />
+              <Button_donwload
+                link=''
+                interaction={(e) => {
+                  e.preventDefault()
+                }}
+                text='Seguir em frente'
+              />
             </>
           }
           imageLink='../../assets/page01/CardAastronauta.png'
@@ -71,7 +83,7 @@ const Page01 = () => {
             />
           </div>
         </div>
-        <Footer_return />
+        <Footer_return navPage='/intro01' />
       </main>
     </>
   )

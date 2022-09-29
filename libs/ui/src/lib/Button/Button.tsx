@@ -1,7 +1,7 @@
 import './_button.scss'
 
 interface buttonInfos {
-  interaction?: (event: React.MouseEvent<HTMLElement>) => void
+  interaction?: any
   text: string
 }
 

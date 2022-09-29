@@ -14,8 +14,10 @@ import Slider from '../../components/Slider/Slider'
 import { useState } from 'react'
 
 const Page02 = () => {
-  const [videoShowDisplay, setVideoShowDisplay] = useState('videoShowDisplay')
-  const [videoShowOpacity, setVideoShowOpacity] = useState('videoShowOpacity')
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
 
   return (
     <>
@@ -121,7 +123,7 @@ const Page02 = () => {
             ]}
           />
         </section>
-        <Footer_return />
+        <Footer_return navPage='/intro02' />
       </main>
     </>
   )

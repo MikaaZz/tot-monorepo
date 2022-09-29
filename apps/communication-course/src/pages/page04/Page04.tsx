@@ -9,6 +9,11 @@ import Slider from '../../components/Slider/Slider'
 import Footer_return from '../../components/Footer_return/Footer_return'
 
 const Page04 = () => {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
+
   return (
     <>
       <Main_Video
@@ -122,7 +127,7 @@ const Page04 = () => {
           imageLink='../../assets/page01/CardAastronauta.png'
           imageAlt=''
         />
-        <Footer_return />
+        <Footer_return navPage='/intro04' />
       </main>
     </>
   )
