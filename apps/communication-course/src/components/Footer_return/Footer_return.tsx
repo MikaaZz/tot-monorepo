@@ -18,6 +18,12 @@ const Footer_return = (props: navigationFooter) => {
       <Button
         interaction={() => {
           setSpaceShipFly('animationSapceship')
+          if (window.innerWidth > 1024) {
+            setTimeout(() => {
+              navigate(props.navPage)
+            }, 2000)
+            return
+          }
           setTimeout(() => {
             navigate(props.navPage)
           }, 6000)

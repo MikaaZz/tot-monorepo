@@ -1,7 +1,11 @@
 import Map from '../../components/Map/Map'
-import Main_Video from 'libs/ui/src/lib/Video/Video'
+// import Main_Video from 'libs/ui/src/lib/Video/Video'
 
 export function Intro05() {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
   return (
     <>
       {/* <Main_Video

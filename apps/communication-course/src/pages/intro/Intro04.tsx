@@ -1,7 +1,11 @@
 import Map from '../../components/Map/Map'
-import Main_Video from 'libs/ui/src/lib/Video/Video'
+// import Main_Video from 'libs/ui/src/lib/Video/Video'
 
 export function Intro04() {
+  function topPage() {
+    window.scrollTo(0, 0)
+  }
+  topPage()
   return (
     <>
       {/* <Main_Video
@@ -14,7 +18,7 @@ export function Intro04() {
         planet03=''
         planet04=''
         planet05=''
-        planet06='disable'
+        planet06='disableCVN'
         planetLink01='/planet01'
         planetLink02='/planet02'
         planetLink03='/planet03'

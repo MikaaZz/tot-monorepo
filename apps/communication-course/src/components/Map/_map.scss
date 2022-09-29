@@ -319,3 +319,15 @@
     }
   }
 }
+
+.disableCVN {
+  cursor: default;
+  opacity: 0;
+
+  &:hover {
+    opacity: 0;
+    h2 {
+      opacity: 0;
+    }
+  }
+}
