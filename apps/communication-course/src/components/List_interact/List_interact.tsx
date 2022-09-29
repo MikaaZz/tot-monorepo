@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './_list_interact.scss'
 
 interface listInteract {
-  imageLinkOne: string
-  imageAltOne: string
-  imageLinkTwo: string
-  imageAltTwo: string
-  imageLinkThree: string
-  imageAltThree: string
+  imageLinkOne?: string
+  imageAltOne?: string
+  imageLinkTwo?: string
+  imageAltTwo?: string
+  imageLinkThree?: string
+  imageAltThree?: string
 }
 
 const List_interact = (props: listInteract) => {

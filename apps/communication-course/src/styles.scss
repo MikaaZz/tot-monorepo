@@ -127,6 +127,10 @@ li {
   }
 }
 
+.videoContainer--reverse {
+  flex-direction: column !important;
+}
+
 .iframeContainer--video {
   width: 300px;
 
@@ -145,6 +149,10 @@ li {
       text-align: justify;
       width: 50%;
     }
+  }
+
+  .videoContainer--reverse {
+    flex-direction: row-reverse !important;
   }
 
   .iframeContainer--video {

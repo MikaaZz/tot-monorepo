@@ -1,0 +1,49 @@
+.complementMaterial__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 32px;
+  margin: 32px auto;
+
+  max-width: 1024px;
+  width: 90%;
+
+  &__textButtonContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 32px;
+
+    order: 2;
+    &--text {
+      color: var(--color-whiteText);
+      text-align: center;
+    }
+  }
+  &--image {
+    order: 1;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .complementMaterial__container {
+    flex-direction: row;
+    &__textButtonContainer {
+      align-items: flex-start;
+      order: 1;
+
+      &--text {
+        text-align: left;
+      }
+    }
+    &--image {
+      order: 2;
+      width: 450px;
+    }
+  }
+}

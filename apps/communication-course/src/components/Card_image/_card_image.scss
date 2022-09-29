@@ -16,6 +16,7 @@
   padding-left: 16px;
 
   position: relative;
+  overflow: hidden;
 
   max-width: 1024px;
   width: 90%;
@@ -30,14 +31,15 @@
     }
     ul {
       list-style: none;
-      li {
-        margin-left: 16px;
-      }
     }
   }
   &--image {
     border-radius: 0 15px 0 0;
     filter: drop-shadow(-6px 0px 28px rgba(0, 0, 0, 0.4));
+
+    position: relative;
+
+    width: 100%;
   }
 }
 
@@ -48,11 +50,14 @@
     &--textContainer {
       padding: 32px 0 32px 32px;
       width: 60%;
+      li {
+        margin-left: 16px;
+      }
     }
     &--image {
       bottom: 64px;
-      position: relative;
       border-radius: 0 15px 15px 180px;
+      width: 300px;
     }
   }
 }
