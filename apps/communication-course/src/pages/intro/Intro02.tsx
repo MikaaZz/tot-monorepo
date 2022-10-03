@@ -1,7 +1,9 @@
 import Map from '../../components/Map/Map'
+import Scorm from '../../scorm/Scorm'
 // import Main_Video from 'libs/ui/src/lib/Video/Video'
 
 export function Intro02() {
+  Scorm.setData('cmi.core.lesson_location', '2')
   function topPage() {
     window.scrollTo(0, 0)
   }

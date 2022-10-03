@@ -119,8 +119,13 @@
     }
     &--star {
       .map-navigation__divPlanet--titleOne {
+        order: 1;
+        width: 90%;
       }
       img {
+        order: 2;
+        mix-blend-mode: luminosity;
+        width: 150px !important;
       }
     }
   }
@@ -284,8 +289,16 @@
       }
       &--star {
         .map-navigation__divPlanet--titleOne {
+          left: 450px;
+          top: 380px;
+          position: absolute;
+          text-align: center;
+          width: 250px;
         }
         img {
+          left: 450px;
+          top: 220px;
+          position: absolute;
         }
       }
     }

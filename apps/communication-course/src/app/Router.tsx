@@ -1,5 +1,6 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 
+// PAGES
 import Intro from '../pages/intro/Intro'
 import Intro01 from '../pages/intro/Intro01'
 import Intro02 from '../pages/intro/Intro02'
@@ -13,7 +14,31 @@ import Page04 from '../pages/page04/Page04'
 import Page05 from '../pages/page05/Page05'
 import Page06 from '../pages/page06/Page06'
 
+// DEPENDENCIES MODULES
+import Scorm from '../scorm/Scorm'
+
 export function Router() {
+  Scorm.init()
+  const navigate = useNavigate()
+
+  const pageData = { actualyPage: Scorm.getData('cmi.core.lesson_location') }
+
+  if (pageData.actualyPage === '1') {
+    navigate('/intro01')
+  }
+  if (pageData.actualyPage === '2') {
+    navigate('/intro02')
+  }
+  if (pageData.actualyPage === '3') {
+    navigate('/intro03')
+  }
+  if (pageData.actualyPage === '4') {
+    navigate('/intro04')
+  }
+  if (pageData.actualyPage === '5') {
+    navigate('/intro05')
+  }
+
   return (
     <Routes>
       <Route path='/' element={<Intro />} />

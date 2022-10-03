@@ -69,7 +69,7 @@ const Map = (props: mapsDisable) => {
         <Link
           to={props.planetLink06}
           className={`map-navigation__divPlanet map-navigation__divPlanet--star ${props.planet06}`}>
-          <img src='' alt=''></img>
+          <img src='../../assets/Start-map.png' alt=''></img>
           <h2 className='map-navigation__divPlanet--titleOne'>
             Comunicação não violenta (CNV)
           </h2>
